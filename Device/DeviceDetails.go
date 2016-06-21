@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	HologramGo.InitializeUsernameAndPassword("../credentials.json");
+	HologramGo.InitializeUsernameAndPassword("../credentials.json")
 
 	fmt.Println("Welcome to the GetDevice example")
 
@@ -27,7 +27,7 @@ func main() {
 	fmt.Println("Device Created: " + device.GetWhenCreated())
 }
 
-// Expected output:
+// Example output:
 
 // Welcome to the GetDevice example
 // Device ID: 37739
