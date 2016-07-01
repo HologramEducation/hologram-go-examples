@@ -1,13 +1,13 @@
 package main
 
 import (
-	"../../Hologram-Go"
 	"fmt"
+	"github.com/hologram-io/hologram-go"
 )
 
 func main() {
 
-	HologramGo.InitializeUsernameAndPassword("../credentials.json");
+	HologramGo.InitializeUsernameAndPassword("../credentials.json")
 
 	fmt.Println("Welcome to the Device Plans example")
 
@@ -15,21 +15,21 @@ func main() {
 	plans := HologramGo.GetDeviceDataPlans()
 
 	for _, plan := range plans {
-	    
-	    dataPlan := (HologramGo.Plan)(plan.(map[string]interface{}))
 
-	    fmt.Print("Data Plan ID: ")
-	    fmt.Println(dataPlan.GetDataPlanId())
+		dataPlan := (HologramGo.Plan)(plan.(map[string]interface{}))
 
-	    fmt.Print("Data Plan Partner ID: ")
-	    fmt.Println(dataPlan.GetDataPlanPartnerId())
+		fmt.Print("Data Plan ID: ")
+		fmt.Println(dataPlan.GetDataPlanId())
 
-	    fmt.Println("Data Plan Name: " + dataPlan.GetDataPlanName())
+		fmt.Print("Data Plan Partner ID: ")
+		fmt.Println(dataPlan.GetDataPlanPartnerId())
 
-	    fmt.Println("Data Plan Description: " + dataPlan.GetDataPlanDescription())
+		fmt.Println("Data Plan Name: " + dataPlan.GetDataPlanName())
 
-	    fmt.Print("Data Plan Size: ")
-	    fmt.Println(dataPlan.GetDataPlanSize())
+		fmt.Println("Data Plan Description: " + dataPlan.GetDataPlanDescription())
+
+		fmt.Print("Data Plan Size: ")
+		fmt.Println(dataPlan.GetDataPlanSize())
 	}
 }
 

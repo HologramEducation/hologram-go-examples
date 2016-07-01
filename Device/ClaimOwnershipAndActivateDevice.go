@@ -1,8 +1,8 @@
 package main
 
 import (
-	"../../Hologram-Go"
 	"fmt"
+	"github.com/hologram-io/hologram-go"
 )
 
 func main() {
@@ -11,7 +11,7 @@ func main() {
 
 	fmt.Println("Welcome to this example where you can claim ownership and activate a device")
 
-	// Claim and activate a device with sim id 
+	// Claim and activate a device with sim id
 	var device = HologramGo.ClaimOwnershipAndActivateDevice(8944501410155200039)
 
 	fmt.Print("Device ID: ")

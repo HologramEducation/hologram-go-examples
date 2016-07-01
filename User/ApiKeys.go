@@ -1,7 +1,7 @@
 package main
 
 import (
-	"../../Hologram-Go"
+	"github.com/hologram-io/hologram-go"
 	"fmt"
 )
 

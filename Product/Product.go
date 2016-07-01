@@ -1,8 +1,8 @@
 package main
 
 import (
-	"../../Hologram-Go"
 	"fmt"
+	"github.com/hologram-io/hologram-go"
 )
 
 // This example shows how to get all a product by id in our store.

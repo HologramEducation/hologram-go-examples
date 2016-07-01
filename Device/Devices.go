@@ -1,31 +1,31 @@
 package main
 
 import (
-    "../../Hologram-Go"
-    "fmt"
+	"fmt"
+	"github.com/hologram-io/hologram-go"
 )
 
 func main() {
 
-    HologramGo.InitializeUsernameAndPassword("../credentials.json")
+	HologramGo.InitializeUsernameAndPassword("../credentials.json")
 
-    fmt.Println("Welcome to the GetDevices example")
+	fmt.Println("Welcome to the GetDevices example")
 
-    var devices = HologramGo.GetDevices()
+	var devices = HologramGo.GetDevices()
 
-    device := (HologramGo.Device)(devices[0].(map[string]interface{}))
+	device := (HologramGo.Device)(devices[0].(map[string]interface{}))
 
-    fmt.Print("Device ID: ")
-    fmt.Println(device.GetDeviceId())
+	fmt.Print("Device ID: ")
+	fmt.Println(device.GetDeviceId())
 
-    fmt.Print("User ID: ")
-    fmt.Println(device.GetDeviceUserId())
+	fmt.Print("User ID: ")
+	fmt.Println(device.GetDeviceUserId())
 
-    fmt.Println("Device Name: " + device.GetDeviceName())
+	fmt.Println("Device Name: " + device.GetDeviceName())
 
-    fmt.Println("Device Type: " + device.GetDeviceType())
+	fmt.Println("Device Type: " + device.GetDeviceType())
 
-    fmt.Println("Device Created: " + device.GetWhenCreated())
+	fmt.Println("Device Created: " + device.GetWhenCreated())
 }
 
 // Example output:

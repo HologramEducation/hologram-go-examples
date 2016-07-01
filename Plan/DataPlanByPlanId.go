@@ -1,8 +1,8 @@
 package main
 
 import (
-	"../../Hologram-Go"
 	"fmt"
+	"github.com/hologram-io/hologram-go"
 )
 
 func main() {
