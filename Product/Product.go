@@ -31,8 +31,7 @@ func main() {
 	fmt.Println("Product Invoice Description: " + product.GetProductInvoiceDescription())
 }
 
-
-// Expected output:
+// Example output:
 
 // Welcome to the GetProduct example
 // Product SKU: SIM

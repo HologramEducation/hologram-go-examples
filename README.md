@@ -8,5 +8,6 @@ Go application.
 
 ## Installation
 1. Please create a credentials.json file in the top directory of this repository.
+The credentials.json file is going to contain
 
 ## Support

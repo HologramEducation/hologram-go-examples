@@ -11,7 +11,7 @@ func main() {
 
 	fmt.Println("Welcome to the Data plan by Plan ID example")
 
-	// Get a device with device id 37739
+	// Get a data plan with device id 37739
 	var dataPlan = HologramGo.GetDeviceDataPlan(51)
 
 	fmt.Print("Data Plan ID: ")
