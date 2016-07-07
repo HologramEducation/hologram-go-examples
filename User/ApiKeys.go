@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/hologram-io/hologram-go"
 	"fmt"
+	"github.com/hologram-io/hologram-go"
 )
 
 // This example will hopefully give you an idea on how to query your API key via
@@ -10,7 +10,7 @@ import (
 
 func main() {
 
-	HologramGo.InitializeUsernameAndPassword("../credentials.json");
+	HologramGo.InitializeUsernameAndPassword("../credentials.json")
 
 	fmt.Println("Welcome to the API Key example")
 
