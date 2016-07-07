@@ -1,5 +1,7 @@
 #Hologram-Go-Library Examples
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/hologram-io/hologram-go-examples)](https://goreportcard.com/report/github.com/hologram-io/hologram-go-examples)
+
 ## Introduction
 
 This is a repository of examples on how to use our 
